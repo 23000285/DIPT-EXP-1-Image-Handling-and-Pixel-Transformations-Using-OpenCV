@@ -1,175 +1,4 @@
-# DIPT-EXP-1-Image-Handling-and-Pixel-Transformations-Using-OpenCV
-
-## AIM:
-Write a Python program using OpenCV that performs the following tasks:
-
-1) Read and Display an Image.  
-2) Adjust the brightness of an image.  
-3) Modify the image contrast.  
-4) Generate a third image using bitwise operations.
-
-## Software Required:
-- Anaconda - Python 3.7
-- Jupyter Notebook (for interactive development and execution)
-
-## Algorithm:
-### Step 1:
-Load an image from your local directory and display it.
-
-### Step 2:
-Create a matrix of ones (with data type float64) to adjust brightness.
-
-### Step 3:
-Create brighter and darker images by adding and subtracting the matrix from the original image.  
-Display the original, brighter, and darker images.
-
-### Step 4:
-Modify the image contrast by creating two higher contrast images using scaling factors of 1.1 and 1.2 (without overflow fix).  
-Display the original, lower contrast, and higher contrast images.
-
-### Step 5:
-Split the image (boy.jpg) into B, G, R components and display the channels
-
-## Program Developed By:
-- **Name:** [Your Name Here]  
-- **Register Number:** [Your Register Number Here]
-
-  ### Ex. No. 01
-
-#### 1. Read the image ('Eagle_in_Flight.jpg') using OpenCV imread() as a grayscale image.
-```python
-# YOUR CODE HERE
-```
-
-#### 2. Print the image width, height & Channel.
-```python
-# YOUR CODE HERE
-```
-
-#### 3. Display the image using matplotlib imshow().
-```python
-# YOUR CODE HERE
-```
-
-#### 4. Save the image as a PNG file using OpenCV imwrite().
-```python
-# YOUR CODE HERE
-```
-
-#### 5. Read the saved image above as a color image using cv2.cvtColor().
-```python
-# YOUR CODE HERE
-```
-
-#### 6. Display the Colour image using matplotlib imshow() & Print the image width, height & channel.
-```python
-# YOUR CODE HERE
-```
-
-#### 7. Crop the image to extract any specific (Eagle alone) object from the image.
-```python
-# YOUR CODE HERE
-```
-
-#### 8. Resize the image up by a factor of 2x.
-```python
-# YOUR CODE HERE
-```
-
-#### 9. Flip the cropped/resized image horizontally.
-```python
-# YOUR CODE HERE
-```
-
-#### 10. Read in the image ('Apollo-11-launch.jpg').
-```python
-# YOUR CODE HERE
-```
-
-#### 11. Add the following text to the dark area at the bottom of the image (centered on the image):
-```python
-text = 'Apollo 11 Saturn V Launch, July 16, 1969'
-font_face = cv2.FONT_HERSHEY_PLAIN
-# YOUR CODE HERE: use putText()
-```
-
-#### 12. Draw a magenta rectangle that encompasses the launch tower and the rocket.
-```python
-rect_color = magenta
-# YOUR CODE HERE
-```
-
-#### 13. Display the final annotated image.
-```python
-# YOUR CODE HERE
-```
-
-#### 14. Read the image ('Boy.jpg').
-```python
-# YOUR CODE HERE
-```
-
-#### 15. Adjust the brightness of the image.
-```python
-# Create a matrix of ones (with data type float64)
-# matrix_ones = 
-# YOUR CODE HERE
-```
-
-#### 16. Create brighter and darker images.
-```python
-img_brighter = cv2.add(img, matrix)
-img_darker = cv2.subtract(img, matrix)
-# YOUR CODE HERE
-```
-
-#### 17. Display the images (Original Image, Darker Image, Brighter Image).
-```python
-# YOUR CODE HERE
-```
-
-#### 18. Modify the image contrast.
-```python
-# Create two higher contrast images using the 'scale' option with factors of 1.1 and 1.2 (without overflow fix)
-matrix1 = 
-matrix2 = 
-# img_higher1 = 
-# img_higher2 = 
-# YOUR CODE HERE
-```
-
-#### 19. Display the images (Original, Lower Contrast, Higher Contrast).
-```python
-# YOUR CODE HERE
-```
-
-#### 20. Split the image (boy.jpg) into the B,G,R components & Display the channels.
-```python
-# YOUR CODE HERE
-```
-
-#### 21. Merged the R, G, B , displays along with the original image
-```python
-# YOUR CODE HERE
-```
-
-#### 22. Split the image into the H, S, V components & Display the channels.
-```python
-# YOUR CODE HERE
-```
-#### 23. Merged the H, S, V, displays along with original image.
-```python
-# YOUR CODE HERE
-```
-
-## Output:
-- **i)** Read and Display an Image.  
-- **ii)** Adjust Image Brightness.  
-- **iii)** Modify Image Contrast.  
-- **iv)** Generate Third Image Using Bitwise Operations.
-
-## Result:
-Thus, the images were read, displayed, brightness and contrast adjustments were made, and bitwise operations were performed successfully using the Python program.
+# Image-Handling-and-Pixel-Transformations-Using-OpenCV 
 
 ## AIM:
 Write a Python program using OpenCV that performs the following tasks:
@@ -495,21 +324,35 @@ plt.show()
 ```
 
 ## Output:
-- **i)** Read and Display an Image.
-<img width="765" height="473" alt="image" src="https://github.com/user-attachments/assets/dca1fddf-0e0f-4586-b830-30a8d925b4d3" />
-<img width="731" height="484" alt="image" src="https://github.com/user-attachments/assets/1f427ffe-5be7-4bc9-9105-cd996775cf99" />
-<img width="763" height="458" alt="image" src="https://github.com/user-attachments/assets/92269931-0bec-4cef-8fbe-864fb054de6f" />
-<img width="810" height="477" alt="image" src="https://github.com/user-attachments/assets/f178c699-467b-4fb1-82ea-098df190b864" />
-<img width="732" height="479" alt="image" src="https://github.com/user-attachments/assets/f1607baa-fed1-4fbf-bd62-7ccd577f376a" />
-<img width="889" height="474" alt="image" src="https://github.com/user-attachments/assets/663ff428-281f-4dde-9124-03514966c469" />
-<img width="776" height="485" alt="image" src="https://github.com/user-attachments/assets/ea10f5b9-507a-48b8-8c6a-c1f815be0dfe" />
-<img width="809" height="468" alt="image" src="https://github.com/user-attachments/assets/ee397d3d-9640-4d47-87c8-3ae39d3e002d" />
-<img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/d36c0e90-43f7-4522-928e-f7b402144dc4" />
-<img width="855" height="461" alt="image" src="https://github.com/user-attachments/assets/79742ea2-f483-4a61-ab92-4b21394f5542" />
-<img width="721" height="539" alt="image" src="https://github.com/user-attachments/assets/776df503-4ac7-4013-b112-2c3deed8ee10" />
-<img width="620" height="529" alt="image" src="https://github.com/user-attachments/assets/62976af3-1690-4bdd-b664-9e916d27600c" />
-<img width="769" height="476" alt="image" src="https://github.com/user-attachments/assets/9b9a8571-ae8d-42f0-9f2b-560ef8781203" />
-<img width="773" height="478" alt="image" src="https://github.com/user-attachments/assets/1690047b-c847-4981-9673-4908f11b54e3" />
+
+<img width="819" height="473" alt="image" src="https://github.com/user-attachments/assets/d605b62c-9f3d-4066-94f7-447ee733ebae" />
+
+<img width="797" height="459" alt="image" src="https://github.com/user-attachments/assets/ae9f4108-ab17-41c6-ae59-e775c11fe6c2" />
+
+<img width="761" height="459" alt="image" src="https://github.com/user-attachments/assets/5693b273-695a-441f-ab20-a6c4f8241228" />
+
+<img width="821" height="489" alt="image" src="https://github.com/user-attachments/assets/6109fb7b-d35a-4706-aa2d-08513db78dfc" />
+
+<img width="798" height="489" alt="image" src="https://github.com/user-attachments/assets/80a64500-3d02-4f23-903e-f1a5c4cd7a96" />
+
+<img width="795" height="497" alt="image" src="https://github.com/user-attachments/assets/95495231-f918-4e3d-b7dc-5636184e5c1f" />
+
+<img width="832" height="523" alt="image" src="https://github.com/user-attachments/assets/b62b1190-3a12-4f4d-8dc0-13e4f9453aec" />
+
+<img width="863" height="505" alt="image" src="https://github.com/user-attachments/assets/70b64b41-22ed-43c5-a394-9879eaebeb48" />
+
+<img width="844" height="474" alt="image" src="https://github.com/user-attachments/assets/80afcea0-7b53-4511-88f5-27236af97aac" />
+
+<img width="855" height="546" alt="image" src="https://github.com/user-attachments/assets/f3a39a97-14b1-4aa9-8d8d-bce6753600a9" />
+
+<img width="840" height="475" alt="image" src="https://github.com/user-attachments/assets/b4a2c426-2a2e-4c9a-97a3-498535d84188" />
+
+
+<img width="779" height="548" alt="image" src="https://github.com/user-attachments/assets/909f9d91-79cd-46ab-83a3-2ca5da1b6b8b" />
+
+<img width="677" height="552" alt="image" src="https://github.com/user-attachments/assets/ebf7a640-0d10-4690-92c6-8306c1f4be80" />
+
+<img width="1055" height="499" alt="image" src="https://github.com/user-attachments/assets/f2ffab67-d754-4f0e-bea1-212ba99dbff3" />
 
 ## Result:
 Thus, the image was read and displayed successfully. Brightness and contrast adjustments were performed, the BGR and HSV channels were split and merged successfully, and the required image processing operations were implemented using OpenCV.
