@@ -1,5 +1,9 @@
 # Image-Handling-and-Pixel-Transformations-Using-OpenCV 
 
+## Name: VENKATANATHAN P R
+
+## Register No: 212223240173
+
 ## AIM:
 Write a Python program using OpenCV that performs the following tasks:
 
