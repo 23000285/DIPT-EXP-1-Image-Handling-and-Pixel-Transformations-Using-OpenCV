@@ -1,4 +1,4 @@
-# Image-Handling-and-Pixel-Transformations-Using-OpenCV 
+# EX 01:Image-Handling-and-Pixel-Transformations-Using-OpenCV 
 
 ## Name: VENKATANATHAN P R
 
